@@ -1,0 +1,2 @@
+- Opern terminal, input and run 'chromedriver' first. Check and ensure that chromedriver version is same with Chrome browser version
+- Then open terminal, input and run 'npm test .\test.conf.js'
