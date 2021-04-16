@@ -1,7 +1,7 @@
 exports.config = {
     // Test scripts
     specs: [
-        "./src/browserTabsHandle.js"
+        "./src/waitForElementDisappear.js"
     ],
     capabilities: [
         {

@@ -1,37 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="API Learning" timestamp="2021-04-13T21:39:28" time="13.834" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="API Learning" timestamp="2021-04-16T21:41:30" time="11.816" tests="1" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="API Learning"/>
-      <property name="capabilities" value="chrome.89_0_4389_114.windows"/>
-      <property name="file" value=".\src\browserTabsHandle.js"/>
+      <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
+      <property name="file" value=".\src\waitForElementDisappear.js"/>
     </properties>
-    <testcase classname="chrome.89_0_4389_114.windows.API Learning" name="Handle Multiple Tabs" time="13.833">
+    <testcase classname="chrome.89_0_4389_128.windows.API Learning" name="Wait for disappeared" time="11.813">
+      <failure/>
+      <error message="element (&quot;[type=&quot;submit&quot;]&quot;) still not displayed after 5000ms"/>
       <system-out><![CDATA[
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/url - {"url":"https://webdriver.io/docs/api.html"}
-RESULT: {"url":"https://webdriver.io/docs/api.html"}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/element - {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-RESULT: {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2","ELEMENT":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2","ELEMENT":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2"}]}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/element - {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-RESULT: {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/element/7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2/click - {}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/url - {"url":"https://the-internet.herokuapp.com/"}
+RESULT: {"url":"https://the-internet.herokuapp.com/"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"link text","value":"Form Authentication"}
+RESULT: {"using":"link text","value":"Form Authentication"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4916a293-b2e9-4cf8-9328-9b8aa6de1036","ELEMENT":"4916a293-b2e9-4cf8-9328-9b8aa6de1036"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4916a293-b2e9-4cf8-9328-9b8aa6de1036","ELEMENT":"4916a293-b2e9-4cf8-9328-9b8aa6de1036"}]}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"link text","value":"Form Authentication"}
+RESULT: {"using":"link text","value":"Form Authentication"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/4916a293-b2e9-4cf8-9328-9b8aa6de1036/click - {}
 RESULT: {}
-COMMAND: GET /session/780ea25e386da924a23466342e3ac638/window/handles - {}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"01d9a765-a824-49d2-9326-449486d4b208","ELEMENT":"01d9a765-a824-49d2-9326-449486d4b208"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"01d9a765-a824-49d2-9326-449486d4b208","ELEMENT":"01d9a765-a824-49d2-9326-449486d4b208"}]}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/01d9a765-a824-49d2-9326-449486d4b208/clear - {}
 RESULT: {}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/window - {"handle":"CDwindow-59D3F14636E8BD719FB24D231E8DF033"}
-RESULT: {"handle":"CDwindow-59D3F14636E8BD719FB24D231E8DF033"}
-COMMAND: GET /session/780ea25e386da924a23466342e3ac638/title - {}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/01d9a765-a824-49d2-9326-449486d4b208/value - {"text":"tomsmith"}
+RESULT: {"text":"tomsmith"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/02b695eb-85e7-4cc7-afcb-a337e7909bb7/clear - {}
 RESULT: {}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/window - {"handle":"CDwindow-924A1556684BFDFBA6D1E2820D0BB162"}
-RESULT: {"handle":"CDwindow-924A1556684BFDFBA6D1E2820D0BB162"}
-COMMAND: GET /session/780ea25e386da924a23466342e3ac638/title - {}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/02b695eb-85e7-4cc7-afcb-a337e7909bb7/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/6b6ba1b3-82a3-4a6f-b60c-ae69a24b67d4/click - {}
 RESULT: {}
-COMMAND: DELETE /session/780ea25e386da924a23466342e3ac638 - {}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: DELETE /session/24798a56f79ba02bf83a6470864f6304 - {}
 RESULT: {}
 ]]></system-out>
+      <system-err><![CDATA[
+Error: element ("[type="submit"]") still not displayed after 5000ms
+    at D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+    at async Element.elementErrorHandlerCallbackFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:32)
+    at async Element.runCommandWithHooks (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
+    at Element.runCommandWithHooks (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
+    at Element.wrapCommandFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
+    at Element.elementErrorHandlerCallback (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\middlewares.js:44:12)
+    at Element.waitForDisplayed (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:39:17)
+    at Element.wrapCommandFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:60:23)
+    at Element.elementErrorHandlerCallbackFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:65)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Context.<anonymous> (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\src\waitForElementDisappear.js:25:21)
+    at Context.executeSync (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\index.js:38:22)
+    at D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\index.js:69:68
+]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>
