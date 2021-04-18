@@ -1,7 +1,7 @@
 exports.config = {
     // Test scripts
     specs: [
-        "./src/waitForElementDisappear.js"
+        "./src/Test_Scripts/Login_Type_Method_Chaining.js"
     ],
     capabilities: [
         {
@@ -14,6 +14,7 @@ exports.config = {
     hostname: 'localhost',
     port: 9515,
     path: '//',
+    baseUrl: "https://the-internet.herokuapp.com",
 
     // Test framework
     framework: 'mocha',

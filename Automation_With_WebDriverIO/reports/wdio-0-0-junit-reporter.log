@@ -1,87 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="API Learning" timestamp="2021-04-16T21:41:30" time="11.816" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="Page Object Method Chaining" timestamp="2021-04-18T15:25:51" time="9.552" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="API Learning"/>
+      <property name="suiteName" value="Page Object Method Chaining"/>
       <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
-      <property name="file" value=".\src\waitForElementDisappear.js"/>
+      <property name="file" value=".\src\Test_Scripts\Login_Type_Method_Chaining.js"/>
     </properties>
-    <testcase classname="chrome.89_0_4389_128.windows.API Learning" name="Wait for disappeared" time="11.813">
-      <failure/>
-      <error message="element (&quot;[type=&quot;submit&quot;]&quot;) still not displayed after 5000ms"/>
+    <testcase classname="chrome.89_0_4389_128.windows.Page Object Method Chaining" name="Login to the page" time="9.55">
       <system-out><![CDATA[
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/url - {"url":"https://the-internet.herokuapp.com/"}
-RESULT: {"url":"https://the-internet.herokuapp.com/"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"link text","value":"Form Authentication"}
-RESULT: {"using":"link text","value":"Form Authentication"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4916a293-b2e9-4cf8-9328-9b8aa6de1036","ELEMENT":"4916a293-b2e9-4cf8-9328-9b8aa6de1036"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4916a293-b2e9-4cf8-9328-9b8aa6de1036","ELEMENT":"4916a293-b2e9-4cf8-9328-9b8aa6de1036"}]}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"link text","value":"Form Authentication"}
-RESULT: {"using":"link text","value":"Form Authentication"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/4916a293-b2e9-4cf8-9328-9b8aa6de1036/click - {}
-RESULT: {}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"#username"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element - {"using":"css selector","value":"#username"}
 RESULT: {"using":"css selector","value":"#username"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"01d9a765-a824-49d2-9326-449486d4b208","ELEMENT":"01d9a765-a824-49d2-9326-449486d4b208"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"01d9a765-a824-49d2-9326-449486d4b208","ELEMENT":"01d9a765-a824-49d2-9326-449486d4b208"}]}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"#username"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6c0ec517-0335-47b7-a381-44ac56f0b3d1","ELEMENT":"6c0ec517-0335-47b7-a381-44ac56f0b3d1"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6c0ec517-0335-47b7-a381-44ac56f0b3d1","ELEMENT":"6c0ec517-0335-47b7-a381-44ac56f0b3d1"}]}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element - {"using":"css selector","value":"#username"}
 RESULT: {"using":"css selector","value":"#username"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/01d9a765-a824-49d2-9326-449486d4b208/clear - {}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element/6c0ec517-0335-47b7-a381-44ac56f0b3d1/clear - {}
 RESULT: {}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/01d9a765-a824-49d2-9326-449486d4b208/value - {"text":"tomsmith"}
-RESULT: {"text":"tomsmith"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"#password"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element/6c0ec517-0335-47b7-a381-44ac56f0b3d1/value - {"text":"Tuan Anh"}
+RESULT: {"text":"Tuan Anh"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element - {"using":"css selector","value":"#password"}
 RESULT: {"using":"css selector","value":"#password"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/02b695eb-85e7-4cc7-afcb-a337e7909bb7/clear - {}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element/9fe0acd0-2053-4d2c-9b54-ed302cf52d52/clear - {}
 RESULT: {}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/02b695eb-85e7-4cc7-afcb-a337e7909bb7/value - {"text":"SuperSecretPassword!"}
-RESULT: {"text":"SuperSecretPassword!"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element/9fe0acd0-2053-4d2c-9b54-ed302cf52d52/value - {"text":"!#@$#$#%"}
+RESULT: {"text":"!#@$#$#%"}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element - {"using":"css selector","value":"[type=\"submit\"]"}
 RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element/6b6ba1b3-82a3-4a6f-b60c-ae69a24b67d4/click - {}
+COMMAND: POST /session/7d2468583ecef40361e0cc34037a11f0/element/6f8c71e7-9ca3-4d84-a514-e118d649c672/click - {}
 RESULT: {}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: POST /session/24798a56f79ba02bf83a6470864f6304/element - {"using":"css selector","value":"[type=\"submit\"]"}
-RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
-COMMAND: DELETE /session/24798a56f79ba02bf83a6470864f6304 - {}
+COMMAND: DELETE /session/7d2468583ecef40361e0cc34037a11f0 - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-Error: element ("[type="submit"]") still not displayed after 5000ms
-    at D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
-    at async Element.elementErrorHandlerCallbackFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:32)
-    at async Element.runCommandWithHooks (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
-    at Element.runCommandWithHooks (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
-    at Element.wrapCommandFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
-    at Element.elementErrorHandlerCallback (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\middlewares.js:44:12)
-    at Element.waitForDisplayed (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:39:17)
-    at Element.wrapCommandFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\wrapCommand.js:60:23)
-    at Element.elementErrorHandlerCallbackFn (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\webdriverio\build\middlewares.js:23:65)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at Context.<anonymous> (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\src\waitForElementDisappear.js:25:21)
-    at Context.executeSync (D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\index.js:38:22)
-    at D:\NodeJS_AutomationTest\Automation_With_WebDriverIO\node_modules\@wdio\sync\build\index.js:69:68
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>
