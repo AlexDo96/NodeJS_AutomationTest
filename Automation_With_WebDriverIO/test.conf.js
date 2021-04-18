@@ -1,7 +1,7 @@
 exports.config = {
     // Test scripts
     specs: [
-        "./src/Test_Scripts/Login_Type_Method_Chaining.js"
+        "./src/Test_Scripts/TC_002_Login_Failed.js"
     ],
     capabilities: [
         {
