@@ -1,7 +1,9 @@
+let chai = require("chai"); // Import Chai assertion library
+
 exports.config = {
     // Test scripts
     specs: [
-        "./src/Test_Scripts/TC_002_Login_Failed.js"
+        "./src/Test_Scripts/TC_003_Get_Welcome.js"
     ],
     capabilities: [
         {
@@ -28,5 +30,9 @@ exports.config = {
         ['junit', {
             outputDir: './reports'
         }]
-    ]
+    ],
+
+    before: () => {
+        global.expect = chai.expect; // Define "expect" as global variable using Chai "expect" property
+    }
 }
