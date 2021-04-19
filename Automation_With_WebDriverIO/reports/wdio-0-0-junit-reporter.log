@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="API Learning" timestamp="2021-04-13T21:39:28" time="13.834" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="LOGIN" timestamp="2021-04-18T21:32:46" time="9.318" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="API Learning"/>
-      <property name="capabilities" value="chrome.89_0_4389_114.windows"/>
-      <property name="file" value=".\src\browserTabsHandle.js"/>
+      <property name="suiteName" value="LOGIN"/>
+      <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
+      <property name="file" value=".\src\Test_Scripts\TC_002_Login_Failed.js"/>
     </properties>
-    <testcase classname="chrome.89_0_4389_114.windows.API Learning" name="Handle Multiple Tabs" time="13.833">
+    <testcase classname="chrome.89_0_4389_128.windows.LOGIN" name="Login OK" time="1.16">
       <system-out><![CDATA[
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/url - {"url":"https://webdriver.io/docs/api.html"}
-RESULT: {"url":"https://webdriver.io/docs/api.html"}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/element - {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-RESULT: {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2","ELEMENT":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2","ELEMENT":"7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2"}]}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/element - {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-RESULT: {"using":"css selector","value":"#__docusaurus > div.main-wrapper > div > main > div > div > div.col.docItemCol_U38p > div > article > div > p:nth-child(1) > a:nth-child(2)"}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/element/7f1bccc6-3308-48fc-ac1a-9ab43dee6ad2/click - {}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"56a5caa4-5d62-4a86-a332-5010a85ec56e","ELEMENT":"56a5caa4-5d62-4a86-a332-5010a85ec56e"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"56a5caa4-5d62-4a86-a332-5010a85ec56e","ELEMENT":"56a5caa4-5d62-4a86-a332-5010a85ec56e"}]}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element/56a5caa4-5d62-4a86-a332-5010a85ec56e/clear - {}
 RESULT: {}
-COMMAND: GET /session/780ea25e386da924a23466342e3ac638/window/handles - {}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element/56a5caa4-5d62-4a86-a332-5010a85ec56e/value - {"text":"AAAAAAAAAAAAA"}
+RESULT: {"text":"AAAAAAAAAAAAA"}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element/723a1776-2706-458b-b87c-5df012b4b56b/clear - {}
 RESULT: {}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/window - {"handle":"CDwindow-59D3F14636E8BD719FB24D231E8DF033"}
-RESULT: {"handle":"CDwindow-59D3F14636E8BD719FB24D231E8DF033"}
-COMMAND: GET /session/780ea25e386da924a23466342e3ac638/title - {}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element/723a1776-2706-458b-b87c-5df012b4b56b/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf/element/380b01e5-4ead-489a-bc6c-a84b46ec8d47/click - {}
 RESULT: {}
-COMMAND: POST /session/780ea25e386da924a23466342e3ac638/window - {"handle":"CDwindow-924A1556684BFDFBA6D1E2820D0BB162"}
-RESULT: {"handle":"CDwindow-924A1556684BFDFBA6D1E2820D0BB162"}
-COMMAND: GET /session/780ea25e386da924a23466342e3ac638/title - {}
-RESULT: {}
-COMMAND: DELETE /session/780ea25e386da924a23466342e3ac638 - {}
+COMMAND: DELETE /session/a6e43e0d5e6bfdd6a45c40dc739bd0bf - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

@@ -1,7 +1,7 @@
 exports.config = {
     // Test scripts
     specs: [
-        "./src/browserTabsHandle.js"
+        "./src/Test_Scripts/TC_002_Login_Failed.js"
     ],
     capabilities: [
         {
@@ -14,6 +14,7 @@ exports.config = {
     hostname: 'localhost',
     port: 9515,
     path: '//',
+    baseUrl: "https://the-internet.herokuapp.com",
 
     // Test framework
     framework: 'mocha',
