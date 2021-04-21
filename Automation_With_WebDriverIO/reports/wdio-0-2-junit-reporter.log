@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="LOGIN" timestamp="2021-04-20T20:13:17" time="16.338" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="LOGIN"/>
+      <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
+      <property name="file" value=".\src\test-scripts\TC_004_Login_Invalid_Username.js"/>
+    </properties>
+    <testcase classname="chrome.89_0_4389_128.windows.LOGIN" name="Login with wrong username" time="13.332">
+      <system-out><![CDATA[
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"b319c29c-8452-498f-a249-b155734736f4","ELEMENT":"b319c29c-8452-498f-a249-b155734736f4"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"b319c29c-8452-498f-a249-b155734736f4","ELEMENT":"b319c29c-8452-498f-a249-b155734736f4"}]}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element/b319c29c-8452-498f-a249-b155734736f4/clear - {}
+RESULT: {}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element/b319c29c-8452-498f-a249-b155734736f4/value - {"text":"AAAA!#@!$"}
+RESULT: {"text":"AAAA!#@!$"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element/f8d745f6-c7d5-4bd3-a498-57a28cd47f9d/clear - {}
+RESULT: {}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element/f8d745f6-c7d5-4bd3-a498-57a28cd47f9d/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element/0b862f5c-d52d-4b06-8238-b48405861c16/click - {}
+RESULT: {}
+COMMAND: POST /session/08447ee068c87c94cdfcde800de07026/element - {"using":"css selector","value":"#flash-messages"}
+RESULT: {"using":"css selector","value":"#flash-messages"}
+COMMAND: GET /session/08447ee068c87c94cdfcde800de07026/element/14119318-d041-4f3d-a4ce-fff2932afbbb/text - {}
+RESULT: {}
+COMMAND: DELETE /session/08447ee068c87c94cdfcde800de07026 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

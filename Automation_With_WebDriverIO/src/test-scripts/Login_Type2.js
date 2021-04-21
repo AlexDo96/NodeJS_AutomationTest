@@ -1,4 +1,4 @@
-let LoginPage = require('../PageObjects/LoginPage_Type2.js')
+let LoginPage = require('../page-objects/LoginPage_Type2.js')
 
 describe('Page Object type 2', () => {
     it('Login to the page', () => {

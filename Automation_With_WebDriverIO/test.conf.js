@@ -3,8 +3,32 @@ let chai = require("chai"); // Import Chai assertion library
 exports.config = {
     // Test scripts
     specs: [
-        "./src/Test_Scripts/TC_003_Get_Welcome.js"
+        "./src/test-scripts/TC_001_Get_Welcome.js",
+        "./src/test-scripts/TC_002_Login_Failed.js",
+        "./src/test-scripts/TC_003_Get_Welcome.js",
+        "./src/test-scripts/TC_004_Login_Invalid_Username.js",
+        "./src/test-scripts/TC_005_Login_Invalid_Password.js"
     ],
+
+    maxInstances: 2, // Define how many sessions to run test
+
+    // Define test suites
+    suites: {
+        API_Learning: [
+            "./src/API_Learning/alertHandle.js",
+            "./src/API_Learning/browserTabsHandle.js",
+            "./src/API_Learning/clickElement.js"
+        ],
+
+        login_function: [
+            "./src/test-scripts/TC_001_Get_Welcome.js",
+            "./src/test-scripts/TC_002_Login_Failed.js",
+            "./src/test-scripts/TC_003_Get_Welcome.js",
+            "./src/test-scripts/TC_004_Login_Invalid_Username.js",
+            "./src/test-scripts/TC_005_Login_Invalid_Password.js"
+        ]
+    },
+
     capabilities: [
         {
             browserName: "chrome"

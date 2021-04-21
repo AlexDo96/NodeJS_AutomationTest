@@ -1,8 +1,8 @@
-let LoginPage = require('../PageObjects/LoginPage_Type_Method_Chaining.js')
-let LoginData = require('../Test_Data/Data_TCs.js')
+let LoginPage = require('../page-objects/LoginPage_Type_Method_Chaining.js')
+let LoginData = require('../test-data/Data_TCs.js')
 
 describe('LOGIN', () => {
-    const LOGIN_DATA = LoginData.INVALID_LOGIN_CREDS; // Import and using INVALID_LOGIN_CREDS properties
+    const LOGIN_DATA = LoginData.VALID_LOGIN_CREDS; // Import and using VALID_LOGIN_CREDS properties
     
     before(() => {
         // Do something common for all test scripts

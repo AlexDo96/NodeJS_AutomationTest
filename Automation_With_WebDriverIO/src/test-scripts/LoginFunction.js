@@ -1,4 +1,4 @@
-let LoginPage = require('../PageObjects/LoginPage_Type_Method_Chaining.js')
+let LoginPage = require('../page-objects/LoginPage_Type_Method_Chaining.js')
 
 describe('Login Function', () => {
     before(() => {
