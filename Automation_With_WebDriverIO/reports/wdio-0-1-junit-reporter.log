@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="LOGIN" timestamp="2021-04-20T20:12:59" time="16.126" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="LOGIN"/>
+      <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
+      <property name="file" value=".\src\test-scripts\TC_003_Get_Welcome.js"/>
+    </properties>
+    <testcase classname="chrome.89_0_4389_128.windows.LOGIN" name="Login OK and Get welcome text" time="13.114">
+      <system-out><![CDATA[
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"61f00a8f-0716-4631-8c94-6a2ed4d0759f","ELEMENT":"61f00a8f-0716-4631-8c94-6a2ed4d0759f"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"61f00a8f-0716-4631-8c94-6a2ed4d0759f","ELEMENT":"61f00a8f-0716-4631-8c94-6a2ed4d0759f"}]}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element/61f00a8f-0716-4631-8c94-6a2ed4d0759f/clear - {}
+RESULT: {}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element/61f00a8f-0716-4631-8c94-6a2ed4d0759f/value - {"text":"tomsmith"}
+RESULT: {"text":"tomsmith"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element/3181b3e2-beb9-47a0-8efe-697a8af6253c/clear - {}
+RESULT: {}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element/3181b3e2-beb9-47a0-8efe-697a8af6253c/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element/4ab0964a-8877-4a6b-98c3-2d2272e8b6ba/click - {}
+RESULT: {}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element - {"using":"css selector","value":".subheader"}
+RESULT: {"using":"css selector","value":".subheader"}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a456931b-3319-4edd-aa1f-eadf20aa0b7e","ELEMENT":"a456931b-3319-4edd-aa1f-eadf20aa0b7e"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a456931b-3319-4edd-aa1f-eadf20aa0b7e","ELEMENT":"a456931b-3319-4edd-aa1f-eadf20aa0b7e"}]}
+COMMAND: POST /session/470ed546124490ba6b17f9a9a8dc3ee2/element - {"using":"css selector","value":".subheader"}
+RESULT: {"using":"css selector","value":".subheader"}
+COMMAND: GET /session/470ed546124490ba6b17f9a9a8dc3ee2/element/a456931b-3319-4edd-aa1f-eadf20aa0b7e/text - {}
+RESULT: {}
+COMMAND: DELETE /session/470ed546124490ba6b17f9a9a8dc3ee2 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
